@@ -1,0 +1,157 @@
+@import "zcm.less";
+ body{
+     background:#f9f9f9;
+ }
+header{
+    .h(94);
+    .fs(30);
+    .pr(35);
+    color:#fff;
+    background:#fa3432;
+    display:flex;align-items:center;
+    justify-content:space-between;
+    a{color:#fff;}
+    .logo{
+        a{display:flex;align-items:center;}
+        img{.ml(20);.w(47);.h(49);.mr(18);}
+        h1{.fs(30)}
+    }
+}
+.top{
+    .fs(24);
+    display:flex;
+    align-items:center;justify-content:space-around;
+    font-weight:bold;
+    background:#fff;
+    a{color:#4a4a4a}
+    .h(86);
+    .bc{color:#ff3636;}
+}
+//<!--轮播图区域-->
+.swipe{
+    overflow:hidden;
+    visibility: hidden;
+    position:relative;
+    .swipe-wrap{
+        position:relative;
+        overflow:hidden;
+    }
+    .swipe-wrap>div{
+        float:left;position:relative;
+        width:100%;
+    }
+    img{width:100%}
+    .indirector{
+        position:absolute;.b(20);
+        left:50%;transform:translateX(-50%);
+        span{
+            display:inline-block;.w(10);.h(10);background:#fff;
+            border-radius:50%;.m(5);
+        }
+        .on{background:#C73030}
+    }
+}
+//<!--用户导航-->
+.usernav{
+    display:flex;align-items:center;
+    .h(200);justify-content:space-around;
+    background:#fff;.fs(25);
+    a{color:#808080}
+    .iconfont{
+        display:block;.w(90);.h(90);
+        border-radius:30%;.tc();.lh(90);
+        .fs(40);color:#fff;font-weight:bold;
+        .mb(10);
+    }
+    .icon-suo{background:#4099E9}
+    .icon-women{background:#FB6361}
+    .icon-xinshouzhiyin{background:#40C8B0}
+    .icon-wenti{background:#FFAE28}
+}
+
+// <!--热卖产品-->  
+.hot{
+    border-top:1px solid #ddd;
+     .title{
+        display:flex;align-items:center;justify-content:space-between;
+        .pl(25);.pr(40);.fs(30);color:#000;.h(95);font-weight:bold;
+        a{color:#000}
+        h3{
+            background:url(../img/home_ico_09.png) no-repeat;
+            .bs(46,46);.w(250);.h(46);.lh(46);.pl(60);font-weight:bold;
+        }
+    }
+    .itemlist{
+        .pl(23);.pr(23);
+        .item{
+            border:1px solid #ddd;background:#fff;
+            .h(255);.p(25);.mb(25);
+            .item-title{.fs(28);
+                display:flex;align-items:content;justify-content:space-between;
+                h4{color:#000;font-weight:bold;}
+                i{color:#fff;.tc();.lh(30);display:inline-block;.h(30);.fs(20);}
+                .cash{
+                    .w(85);background:#ffab37;
+                    
+                }
+                .iconfont{.w(33);background:#FF7404;}
+            }
+            .data{.mt(28);display:flex;align-items:center;}
+            .data1{
+                .ml(43);
+                strong{.fs(43);color:#fb4034;}
+                em{.fs(24);color:#ff7900;}
+            }
+            .data2{.ml(87);
+                p{color:#9a9b9c;.fs(30);}
+                strong{color:#3d3c3c;}
+            }
+            .data3{
+                .w(140);.h(140);.ml(56);
+            }
+        }
+    }
+}
+//<!--公司动态-->
+.new{
+    background:#fff;.mb(23);
+    .title{
+        .h(100);align-items:center;.fs(30);color:#000;
+        display:flex;justify-content:space-between;
+        border-bottom:1px solid #ccc;.pr(23);.pl(23);
+        a{color:#000}
+        h3{
+            background:url(../img/home_ico_10.png) no-repeat;
+            .bs(46,46);.w(225);.h(46);.lh(46);.pl(60);
+        }
+    }
+    .itemlist{
+        .pt(35);.pl(23);.pr(23);
+        border-bottom:1px solid #ccc;
+        .item{
+            .mb(25);
+            a{display:flex;}
+            img{
+                .w(110);.h(110);
+                flex:0 0 auto;
+                border-radius:20%;.mr(23);
+            }
+             div{
+                flex:1 1 auto;
+                 h4{.pt(10); color:#494848;.fs(28);.mb(25);}
+                 p{color:#9a9b9c;.fs(24);
+                    display: flex;
+                    justify-content: space-between;
+                 }
+            }
+        }
+    }
+}
+//版权声明
+footer{
+    .h(165);background:#fff;.fs(30);
+    line-height:2;.tc();.pt(45);color:#000;
+    border-top:1px solid #ccc;
+    a{color:#000}
+   
+}
