@@ -307,10 +307,13 @@ header .logo h1 {
   color: #3d3c3c;
 }
 .hot .itemlist .item .data3 {
-  width: 1.4rem;
-  height: 1.4rem;
+
   margin-left: 0.56rem;
 }
+.hot .itemlist .item .data3 img{
+  width:1.4rem;height:1.4rem;
+}
+  
 .new {
   background: #fff;
   margin-bottom: 0.23rem;
